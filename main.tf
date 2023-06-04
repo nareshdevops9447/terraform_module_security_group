@@ -26,5 +26,5 @@ resource "aws_security_group_rule" "ingress_with_cidr" {
   to_port = lookup(var.ingress_cidr[count.index],"to_port")
   cidr_blocks = [lookup(var.ingress_cidr[count.index], "cidr_block")]
   protocol = "6"
-  security_group_id = aws_security_group.main
+  security_group_id = aws_security_group.main.id
 }
