@@ -28,7 +28,14 @@ variable "ingress_cidr" {
             to_port ="80"
             cidr_block = "0.0.0.0/0"
             description = "enabling to access 80 from internet" 
+        },
+        { 
+            from_port = "443"
+            to_port ="80"
+            cidr_block = "0.0.0.0/0"
+            description = "enabling to access 443 from internet" 
         }
+
              ]   
 }
     
