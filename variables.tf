@@ -24,7 +24,7 @@ variable "ingress_cidr" {
     type = list(map(string))
     default = [
         { "from_port" = "80"
-    to_port="80"
+           "to_port" ="80"
      "cidr_block" = "0.0.0.0/0"
      "description" = "enabling to access 80 from internet" }
     ]   
